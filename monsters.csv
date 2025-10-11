@@ -1,0 +1,51 @@
+name_jp,name_en,type,l_floor,u_floor,HP,ATK,DEF,image_bank,image_x,image_y,image_w,image_h,image_file,se
+スライム,Slime,N,1,10,5,3,1,0,0,0,16,16,lich.png,16
+ゴブリン,Goblin,N,1,10,6,4,2,0,0,0,16,16,goblin.png,16
+コウモリ,Bat,N,1,10,7,5,3,0,0,0,16,16,lich.png,16
+ネズミ,Rat,N,1,10,8,6,4,0,0,0,16,16,goblin.png,16
+ゾンビ,Zombie,N,1,10,9,7,5,0,0,0,16,16,lich.png,16
+狼,Wolf,N,11,20,10,8,6,0,0,0,16,16,goblin.png,16
+スケルトン,Skeleton,N,11,20,11,9,7,0,0,0,16,16,lich.png,16
+野生の猪,Wild Boar,N,11,20,12,10,8,0,0,0,16,16,goblin.png,16
+オオカミ人間,Werewolf,N,11,20,13,11,9,0,0,0,16,16,lich.png,16
+巨蜂,Giant Bee,U,20,20,14,12,10,0,0,0,16,16,goblin.png,24
+イモムシ,Caterpillar,N,21,30,15,13,11,0,0,0,16,16,lich.png,17
+ハーピー,Harpy,N,21,30,16,14,12,0,0,0,16,16,goblin.png,17
+リザードマン,Lizardman,N,21,30,17,15,13,0,0,0,16,16,lich.png,17
+ゴーレム（石）,Stone Golem,N,21,30,18,16,14,0,0,0,16,16,goblin.png,17
+オーク,Orc,N,21,30,19,17,15,0,0,0,16,16,lich.png,17
+マンティコア,Manticore,N,31,40,20,18,16,0,0,0,16,16,goblin.png,17
+サイクロプス,Cyclops,N,31,40,21,19,17,0,0,0,16,16,lich.png,17
+グリズリー・ベア,Grizzly Bear,N,31,40,22,20,18,0,0,0,16,16,goblin.png,17
+ミノタウロス,Minotaur,N,31,40,23,21,19,0,0,0,16,16,lich.png,17
+ナイトメア,Nightmare,U,40,40,24,22,20,0,0,0,16,16,goblin.png,21
+ケルベロス,Cerberus,N,41,50,25,23,21,0,0,0,16,16,lich.png,14
+キマイラ,Chimera,N,41,50,26,24,22,0,0,0,16,16,goblin.png,14
+ヘルハウンド,Hellhound,N,41,50,27,25,23,0,0,0,16,16,lich.png,14
+巨蛇,Giant Serpent,N,41,50,28,26,24,0,0,0,16,16,goblin.png,14
+トロール,Troll,N,41,50,29,27,25,0,0,0,16,16,lich.png,14
+エント（木の精霊）,Ent,N,51,60,30,28,26,0,0,0,16,16,goblin.png,14
+バジリスク,Basilisk,N,51,60,31,29,27,0,0,0,16,16,lich.png,14
+ナガ（蛇人間）,Naga,N,51,60,32,30,28,0,0,0,16,16,goblin.png,14
+グール,Ghoul,N,51,60,33,31,29,0,0,0,16,16,lich.png,14
+ドラウ（闇エルフ）,Drow,U,60,60,34,32,30,0,0,0,16,16,goblin.png,22
+吸血鬼,Vampire,N,61,70,35,33,31,0,0,0,16,16,lich.png,15
+メドゥーサ,Medusa,N,61,70,36,34,32,0,0,0,16,16,goblin.png,15
+ワイバーン,Wyvern,N,61,70,37,35,33,0,0,0,16,16,lich.png,15
+フロストジャイアント,Frost Giant,N,61,70,38,36,34,0,0,0,16,16,goblin.png,15
+火炎の精霊,Fire Elemental,N,61,70,39,37,35,0,0,0,16,16,lich.png,15
+シーサーペント,Sea Serpent,N,71,80,40,38,36,0,0,0,16,16,goblin.png,15
+雷鳥,Thunderbird,N,71,80,41,39,37,0,0,0,16,16,lich.png,15
+フェニックス,Phoenix,N,71,80,42,40,38,0,0,0,16,16,goblin.png,15
+ドラゴン（小型）,Young Dragon,N,71,80,43,41,39,0,0,0,16,16,lich.png,15
+深淵の魔獣,Abyssal Beast,U,80,80,44,42,40,0,0,0,16,16,goblin.png,26
+グリフォン,Griffin,N,81,90,45,43,41,0,0,0,16,16,lich.png,18
+シャドウデーモン,Shadow Demon,N,81,90,46,44,42,0,0,0,16,16,goblin.png,18
+死霊騎士,Death Knight,N,81,90,47,45,43,0,0,0,16,16,lich.png,18
+リッチ,Lich,N,81,90,48,46,44,0,0,0,16,16,goblin.png,18
+古代のドラゴン,Ancient Dragon,N,81,90,49,47,45,0,0,0,16,16,lich.png,18
+ベヒモス,Behemoth,N,91,100,50,48,46,0,0,0,16,16,goblin.png,18
+バハムート,Bahamut,N,91,100,51,49,47,0,0,0,16,16,lich.png,18
+ハイドラ,Hydra,N,91,100,52,50,48,0,0,0,16,16,goblin.png,18
+タイタン,Titan,N,91,100,53,51,49,0,0,0,16,16,lich.png,18
+神竜,Divine Dragon,U,100,100,54,52,50,0,0,0,16,16,goblin.png,31
