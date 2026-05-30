@@ -192,7 +192,7 @@ class DungeonGame:
     def reset_game(self):
         self.floor = 0
         self.player = {
-            "HP": 100,
+            "HP": 80,
             "ATK": 10,
             "DEF": 5,
             "weapon": self.weapon_data[0],
@@ -404,7 +404,7 @@ class DungeonGame:
             return
 
         if self.scene == SNO_LEVEL_UP:
-            self.message = ("Choose: A (+2 ATK), D (+2 DEF), H (+10 HP)")
+            self.message = ("Choose: A (+1 ATK), D (+1 DEF), H (+10 HP)")
             """成長選択モードの処理"""
             if pyxel.btnp(pyxel.KEY_A) or self.is_button_a_pressed():  # 攻撃力アップ
                 self.handle_level_up("ATK")
@@ -565,12 +565,12 @@ class DungeonGame:
     def handle_level_up(self, div):
         """成長選択モードの処理"""
         if div == "ATK":  # 攻撃力アップ
-            self.player["ATK"] += 2
-            self.message = "You gained +2 ATK!"
+            self.player["ATK"] += 1
+            self.message = "You gained +1 ATK!"
             self.waiting_for_input = True
         if div == "DEF":  # 防御力アップ
-            self.player["DEF"] += 2
-            self.message = "You gained +2 DEF!"
+            self.player["DEF"] += 1
+            self.message = "You gained +1 DEF!"
             self.waiting_for_input = True
         if div == "HP":  # HP回復
             self.player["HP"] += 10
@@ -596,10 +596,9 @@ class DungeonGame:
         self.waiting_for_input = True
 
     def get_higher_rank_item(self, items, current_rank):
-        """現在よりランク高い装備品をランダムに取得"""
-        # 1か2ランクの高い装備品を取得
-        rank = random.randint(1, 2)
-        higher_rank_items = [item for item in items if item["rank"] == (current_rank + rank)]
+        """現在より1ランク高い装備品をランダムに取得"""
+        # 1ランクの高い装備品を取得
+        higher_rank_items = [item for item in items if item["rank"] == (current_rank + 1)]
         if higher_rank_items:
             return random.choice(higher_rank_items)
 
@@ -671,9 +670,10 @@ class DungeonGame:
         else:
             #戦闘イベント
             self.scene = SNO_BATTLE
-            self.is_player_turn = True
             self.buttle_mode = True
             self.monster = self.choose_random_monster()
+            """先行を決定"""
+            self.is_player_turn = self.player["DEF"] >= self.monster["DEF"]
 
     def choose_random_monster(self):
         # """CSVデータからランダムでモンスターを選択"""
